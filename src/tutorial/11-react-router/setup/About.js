@@ -1,11 +1,20 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-const About = () => {
+const About = ({ title }) => {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>{title}</h1>
     </div>
   );
+};
+
+About.defaultProps = {
+  title: "About Page",
+};
+
+About.propTypes = {
+  title: PropTypes.string,
 };
 
 export default About;
