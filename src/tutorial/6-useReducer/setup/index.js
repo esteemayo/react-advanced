@@ -13,7 +13,7 @@ const getLocalStorage = () => {
 const defaultState = {
   people: getLocalStorage(),
   isModalOpen: false,
-  modalContent: "hello world",
+  modalContent: "",
 };
 
 const Index = () => {
